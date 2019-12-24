@@ -1,55 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 body{
     color:#333;
     font-family:arial;
   max-width:650px;
   margin: 0 auto;
   padding: 0 16px;
+  background: #f3f3f3;
   display:flex;
   flex-direction: column;
   min-height: 100vh;
+align-self: center;
 }
 footer{
   color:#888;
   border-top: 1px solid #eee;
-  margin-top:16px;
+  margin-top:0px;
   padding:16px 0;
+  text-align: center;
+  box-shadow: 0  0 15px #888;
 }
 header{
     margin-top:16px;
     margin-bottom:48px;
+    padding: 2px;
 }
 h1{
     text-transform: capitalize;
     font-size:64px;
-    margin-bottom: 16px;
-}
-header a{
-color:#888;
-margin-right: 16px;
-text-decoration: none;
-border:2px solid white;
-}
-header a:hover{
-  padding-bottom: 5px;
-  border-bottom: 2px solid #ddd;
+    font-family:sans-serif;
+    margin-bottom: 25px;
 
 }
+header a{
+color:#6c567b;
+margin-right: 16px;
+background: #f3f3f3;
+text-decoration: none;
+border:1px solid #6c7b95;
+padding:7px 10px;
+border-radius: 50px;
+font-family: sans-serif;
+letter-spacing: 1.25px;
+font-size: 00.8em;
+}
+
 .robot{
     width: 250px;
 }
 .main-content{
 flex-grow: 1;
+
+padding:0 64px;
+margin: auto;
+box-shadow: 0  -10px 15px #888;
+margin-top: 10px;
+z-index:100;
 }
+.main-content,footer{
+   background: #fff;
+   
+}
+
 input{
 border:1px solid #ccc;
-padding: 8px;
+padding: 8px 18px;
+border-radius: 15px;
+outline: none;
 width:400px;
+font-size: medium;
 }
 button{
 cursor:pointer;
 width:80px;
 border:1px solid #888;
-background: #888;
+background: #111d5e;
 color:#fff;
+outline: none;
+letter-spacing: 1.1px;
 padding: 8px;
+border-radius: 7px;
+margin-top: 15px;
+}
+.error{
+  border:1px dashed red;
+   background-color: rgba(255, 0, 0, 0.514);
+   padding:10px;
+   width:500px;
+}
+.success{
+  border:1px dashed rgb(5, 211, 5);
+  background-color: rgba(29, 179, 29, 0.61);
+  padding:10px;
+  width:500px;
+}
+.ap{
+  letter-spacing: 1px;
+   line-height:120%;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 650;
+}
+.hp{
+  line-height: 150%; 
+  font-size: 1.25em;
+  font-family: 'Roboto', sans-serif;
+}
+.ip{
+  font-size: 1em;
+  font-size: large;
+  font-weight: 625;
+}
+.ha{
+ text-align:center;
+ text-decoration: none;
+ color:black;
+ background:linear-gradient(45deg,#fe346e,#f1fa3c); 
+ padding:10px 15px;
+ border-radius:15px;
+ display: inline-block;
+margin-top: 10px 0;
 }
