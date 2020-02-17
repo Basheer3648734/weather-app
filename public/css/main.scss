@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+ $color:(
+    base:#ccc,
+    accent:black,
+    secodary:#555,
+    test:red
+);
+@mixin avgwidth{
+    @media screen and (min-width:600px){
+        @content
+    }
+}
+@mixin mediumwidth{
+    @media screen and (min-width:900px){
+        @content
+    }
+}
+@mixin moremediumwidth{
+    @media screen and (min-width:1100px){
+        @content
+    }
+}
+@mixin largewidth{
+    @media screen and (min-width:1500px){
+        @content
+    }
+}
+@function color($color1)
+{
+    @return map-get($color , $color1 )
+}
+body{
+    background-color:white;
+    padding:0px;
+    margin:0px;
+    .main-content{
+        // background-color: color(test);
+        width:92vw;
+        height:90vh;
+     margin:10px auto;
+     box-shadow: 5px 0px 20px #888;
+     @include moremediumwidth(){
+         width: 80vw;
+         
+     }
+     @include largewidth(){
+         width: 60vw;
+     }
+    }
+}
+body header{
+    text-align:center;
+    // margin: auto;
+    padding: 10px;
+    width: 100%;
+    height: 20vh;
+h1{
+    text-transform: capitalize;
+    font-size:40px;
+    font-family:sans-serif;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+ justify-content: space-around;
+ max-width:50%;
+ margin: auto;
+ @include moremediumwidth(){
+    
+        max-width: 40%;
+    
+}
+@include largewidth(){
+    max-width: 50%;
+}
+ a{
+     text-decoration: none;
+     color:white;
+     font-family: 'Roboto';
+     background: royalblue;
+     padding: 5px 10px;
+     margin: 10px;
+     border-radius: 30px;
+     @include avgwidth(){
+        padding:5px 15px;
+    }
+  
+ }
+}
+}
+.index{
+    text-align: center;
+ .ip{
+     font-size: 20px;
+     font-family: 'Montserrat';
+     letter-spacing: 0px;
+     font-weight: 600;
+ }
+ form{
+     display: flex;
+     flex-direction: column;
+     max-width: 70%;
+     margin:auto;
+  
+    
+ }
+ #iis{
+    width: 95%;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 30px;
+    border:1px solid grey;
+    outline:none;
+    margin: auto;
+    margin-bottom: 15px;
+    @include avgwidth(){
+        width: 80%;
+    }
+    @include mediumwidth(){
+        width: 70%;
+    }
+    @include moremediumwidth(){
+    
+        width: 60%;
+    
+}
+@include largewidth(){
+    width: 80%;
+}
+}
+button{
+    width: 40%;
+    border: 1px solid #888;
+    
+    font-size:12px;
+    color:#fff;
+    background-color:#111d5e;
+    border-radius: 10px;
+    font-family:'Roboto';
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    padding:8px;
+    outline: none;
+    @include avgwidth(){
+        width: 25%;
+        margin:auto;
+    }
+    @include moremediumwidth(){
+    
+        width: 15%;
+    
+}
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+#msg-1{
+    font-family:serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+}
+
+.error{
+    border:1px dashed red;
+     background-color: rgba(255, 0, 0, 0.514);
+     padding:10px;
+     width:80%;
+     margin:auto;
+     font-family: 'Roboto';
+  }
+  .success{
+    border:1px dashed rgb(5, 211, 5);
+    background-color: rgba(29, 179, 29, 0.61);
+    padding:10px;
+    width:80%;
+    font-family: 'Roboto';
+    margin: auto;
+  }
+  footer{
+      font-size: 20px;
+      color: #888;
+      font-family:sans-serif;
+      margin:auto;
+      text-align: center;
+      width: 80%;
+  }
+  .ap,.hp{
+      margin:auto;
+      width: 90%;
+      font-size: 20px;
+      font-family: 'Roboto';
+      line-height: 30px;
+      color:#333;
+      letter-spacing: 0.5px;
+  }
+  .ha{
+    text-align:center;
+    text-decoration: none;
+    color:black;
+    background:linear-gradient(45deg,#fe346e,#f1fa3c); 
+    padding:10px 15px;
+    border-radius:15px;
+
+    display: block;
+     margin:auto;
+    margin-top: 20px ;
+    width: 40%;
+    @include avgwidth(){
+        width: 25%;
+        // margin:auto;
+        padding:10px 10px;
+    }
+    @include moremediumwidth(){
+    
+        width: 15%;
+        padding:10px 5px;
+    
+}
+   
+  }

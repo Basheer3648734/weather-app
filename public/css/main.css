@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+body {
+  background-color: white;
+  padding: 0px;
+  margin: 0px;
+}
+
+body .main-content {
+  width: 92vw;
+  height: 90vh;
+  margin: 10px auto;
+  -webkit-box-shadow: 5px 0px 20px #888;
+          box-shadow: 5px 0px 20px #888;
+}
+
+@media screen and (min-width: 1100px) {
+  body .main-content {
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  body .main-content {
+    width: 60vw;
+  }
+}
+
+body header {
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  height: 20vh;
+}
+
+body header h1 {
+  text-transform: capitalize;
+  font-size: 40px;
+  font-family: sans-serif;
+}
+
+body header .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 50%;
+  margin: auto;
+}
+
+@media screen and (min-width: 1100px) {
+  body header .header {
+    max-width: 40%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  body header .header {
+    max-width: 50%;
+  }
+}
+
+body header .header a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto';
+  background: royalblue;
+  padding: 5px 10px;
+  margin: 10px;
+  border-radius: 30px;
+}
+
+@media screen and (min-width: 600px) {
+  body header .header a {
+    padding: 5px 15px;
+  }
+}
+
+.index {
+  text-align: center;
+}
+
+.index .ip {
+  font-size: 20px;
+  font-family: 'Montserrat';
+  letter-spacing: 0px;
+  font-weight: 600;
+}
+
+.index form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 70%;
+  margin: auto;
+}
+
+.index #iis {
+  width: 95%;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 30px;
+  border: 1px solid grey;
+  outline: none;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 600px) {
+  .index #iis {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .index #iis {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .index #iis {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .index #iis {
+    width: 80%;
+  }
+}
+
+.index button {
+  width: 40%;
+  border: 1px solid #888;
+  font-size: 12px;
+  color: #fff;
+  background-color: #111d5e;
+  border-radius: 10px;
+  font-family: 'Roboto';
+  letter-spacing: 1.5px;
+  font-weight: 300;
+  padding: 8px;
+  outline: none;
+}
+
+@media screen and (min-width: 600px) {
+  .index button {
+    width: 25%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .index button {
+    width: 15%;
+  }
+}
+
+.index button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.index #msg-1 {
+  font-family: serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.error {
+  border: 1px dashed red;
+  background-color: rgba(255, 0, 0, 0.514);
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+  font-family: 'Roboto';
+}
+
+.success {
+  border: 1px dashed #05d305;
+  background-color: rgba(29, 179, 29, 0.61);
+  padding: 10px;
+  width: 80%;
+  font-family: 'Roboto';
+  margin: auto;
+}
+
+footer {
+  font-size: 20px;
+  color: #888;
+  font-family: sans-serif;
+  margin: auto;
+  text-align: center;
+  width: 80%;
+}
+
+.ap, .hp {
+  margin: auto;
+  width: 90%;
+  font-size: 20px;
+  font-family: 'Roboto';
+  line-height: 30px;
+  color: #333;
+  letter-spacing: 0.5px;
+}
+
+.ha {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background: linear-gradient(45deg, #fe346e, #f1fa3c);
+  padding: 10px 15px;
+  border-radius: 15px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  width: 40%;
+}
+
+@media screen and (min-width: 600px) {
+  .ha {
+    width: 25%;
+    padding: 10px 10px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .ha {
+    width: 15%;
+    padding: 10px 5px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

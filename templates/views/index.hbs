@@ -2,24 +2,23 @@
 
 <html>
 <link rel="icon" href="/img/weather.png">
-<link rel="stylesheet" href="css/style.css">
-<title>Home</title>
-
-<head>
+{{!-- <link rel="stylesheet" href="css/style.css"> --}}
+<link rel="stylesheet" href="css/main.css" <head>
 
 </head>
 
 <body>
     <div class="main-content">
         {{>header}}
-        <p class="ip">Enter the location to find weather</p>
-        <form>
-            <input type="text" name="address" id="iis" placeholder="Enter location">
-            <button type="submit">search</button>
-        </form>
-        <p id="msg-1"></p>
-        <p id="msg-2"></p>
-
+        <div class="index">
+            <p class="ip">Enter the location to find weather</p>
+            <form>
+                <input type="text" name="address" id="iis" placeholder="Enter location">
+                <button type="submit">search</button>
+            </form>
+            <p id="msg-1"></p>
+            <p id="msg-2"></p>
+        </div>
     </div>
 
     {{>footer}}
